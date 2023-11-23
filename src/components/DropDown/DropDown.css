@@ -1,0 +1,28 @@
+.menu_dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    border-radius: 0.8rem;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.title, .angle_down, .angle_up, .content_menu_dropdown {
+    padding: 15px;
+}
+
+.content_menu_dropdown {
+    background: #f0f0f0;
+    color: #ff6060;
+    position: relative;
+    z-index: -1;
+    margin-top: -15px;
+    border-radius: 0 0 15px 15px;
+}
+
+.content_menu_dropdown ul {
+    padding-inline-start: 0px;
+}

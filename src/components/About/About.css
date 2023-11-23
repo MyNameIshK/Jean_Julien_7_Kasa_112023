@@ -1,0 +1,56 @@
+/** Banner **/
+
+.banner_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.banner_about_image {
+    position: relative;
+    object-fit: cover;
+    filter: brightness(70%);
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 200px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/** DropDown About **/
+
+.column_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.flex_column_about {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+@media screen and (max-width: 335px) {
+    .padding_about {
+        padding: 5px;
+    }
+
+    .banner_about_image {
+        margin: 0;
+        width: 100%;
+    }
+
+    .column_about {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .flex_column_about {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
