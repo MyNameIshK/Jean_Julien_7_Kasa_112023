@@ -29,7 +29,7 @@ function AppartementDescription() {
       try {
         const response = await fetch("/data.json");
         const data = await response.json();
-        const selectedAppartement = data.find(apartment => apartment.id === id);
+        const selectedAppartement = data.find(appartement => appartement.id === id);
 
         if (!selectedAppartement) {
           navigate("/errorPage");
