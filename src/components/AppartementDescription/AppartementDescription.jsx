@@ -44,8 +44,8 @@ function AppartementDescription() {
     fetchData();
   }, [id, navigate]);
 
-  const nextImage = () => { setCurrentImageIndex((prevIndex) => (prevIndex + 1) % appartement.pictures.length) };
-  const prevImage = () => { setCurrentImageIndex((prevIndex) => (prevIndex - 1 + appartement.pictures.length) % appartement.pictures.length) };
+  const nextImage = () => { setCurrentImageIndex((image) => (image + 1) % appartement.pictures.length) };
+  const prevImage = () => { setCurrentImageIndex((image) => (image - 1 + appartement.pictures.length) % appartement.pictures.length) };
 
   return (
     <div>

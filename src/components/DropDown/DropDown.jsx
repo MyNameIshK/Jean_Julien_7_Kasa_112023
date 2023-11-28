@@ -7,11 +7,9 @@ const angleDown = <FontAwesomeIcon icon={faAngleDown} />;
 const angleUp = <FontAwesomeIcon icon={faAngleUp} />;
 
 const DropDown = (appartement) => {
-    const [openTab, setOpenTab] = useState(false);
 
-    const openTabHandler = () => {
-        setOpenTab((openTab) => !openTab);
-    };
+    const [openTab, setOpenTab] = useState(false);
+    const openTabHandler = () => { setOpenTab((openTab) => !openTab) };
 
     return (
         <div>
